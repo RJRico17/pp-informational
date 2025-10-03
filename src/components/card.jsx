@@ -3,12 +3,11 @@ import React from 'react';
 export default function card(topic) {
     return (
         <div className="card">
-            <h2>{topic.title}</h2>
-            <p>{topic.desc}</p>
+            <h2>{topic}</h2>
             <ul>
-                <li>{topic.item}</li>
-                <li>{topic.item}</li>
-                <li>{topic.item}</li>
+                {topic.map((item, index) => (
+                    <li key={index}>{item}</li>
+                ))}
             </ul>
         </div>
     )

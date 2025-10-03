@@ -1,8 +1,9 @@
 import './App.css'
-import Header from './Header.jsx'
+import Header from './Header.jsx';
+import Card from './components/card.jsx';
+import data from './assets/data.js'
 
 function App() {
-
   return (
     <>
     <div style={{ padding: "2rem", fontFamily: "Poppins, sans-serif" }}>
